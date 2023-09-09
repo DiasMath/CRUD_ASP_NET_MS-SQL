@@ -1,12 +1,13 @@
 ﻿@page
 @model CRUD_ASP_NET_MS_SQL.Pages.Clients.IndexModel
 @{
+    ViewData["Title"] = "Lista de Clientes";
 }
 
+<h1 class="text-center">@ViewData["Title"]</h1>
 
 <br/>
-<h2>Lista de Clientes</h2>
-<a class="btn btn-primary btn-sm" href="/Clients/Create">Novo Cliente</a>
+
 <table class="table">
     <thead>
         <tr>

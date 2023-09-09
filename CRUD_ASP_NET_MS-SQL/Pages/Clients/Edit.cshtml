@@ -1,11 +1,15 @@
 ﻿@page
 @model CRUD_ASP_NET_MS_SQL.Pages.Clients.EditModel
 @{
+    ViewData["Title"] = "Editar Cliente";
 }
 
 
 <br />
-<h2>Editar Cliente</h2>
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+
+<br />
 
 @if (Model.errorMessage.Length > 0)
 {

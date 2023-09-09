@@ -1,7 +1,4 @@
 /* _content/CRUD_ASP_NET_MS-SQL/Pages/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
 a.navbar-brand[b-adymwmr6sc] {
   white-space: normal;
   text-align: center;
@@ -41,9 +38,9 @@ button.accept-policy[b-adymwmr6sc] {
 }
 
 .footer[b-adymwmr6sc] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
 }
