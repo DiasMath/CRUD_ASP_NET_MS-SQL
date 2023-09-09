@@ -7,41 +7,69 @@
 <br />
 <h2>Adicionar Cliente</h2>
 
+@if(Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade-show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="Close"></button>
+    </div>
+}
+
+
 <form method="POST">
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Nome</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="name" value="" />
+            <input type="text" class="form-control" name="name" value="@Model.clientInfo.name" />
         </div>
     </div>
 
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Email</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="Email" value="" />
+            <input type="text" class="form-control" name="Email" value="@Model.clientInfo.email" />
         </div>
     </div>
 
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Telefone</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="phone" value="" />
+            <input type="text" class="form-control" name="phone" value="@Model.clientInfo.phone" />
         </div>
     </div>
 
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Endereço</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="address" value="" />
+            <input type="text" class="form-control" name="address" value="@Model.clientInfo.address" />
         </div>
     </div>
 
     <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Agendamento</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="appointment" value="" />
+            <input type="text" class="form-control" name="appointment" value="@Model.clientInfo.appointment" />
         </div>
     </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Serviço</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="service" value="@Model.clientInfo.service" />
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                    <div class="alert alert-success alert-dismissible fade-show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
 
     <div class="row mb-3">
         <div class="offset-sm-3 col-sm-3 d-grid">
