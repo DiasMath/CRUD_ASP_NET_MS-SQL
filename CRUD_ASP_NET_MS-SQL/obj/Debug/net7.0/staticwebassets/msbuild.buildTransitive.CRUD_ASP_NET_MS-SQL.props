@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CRUD_ASP_NET_MS-SQL.props" />
+</Project>

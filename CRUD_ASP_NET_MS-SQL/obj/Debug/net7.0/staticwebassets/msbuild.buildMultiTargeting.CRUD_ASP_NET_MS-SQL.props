@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CRUD_ASP_NET_MS-SQL.props" />
+</Project>

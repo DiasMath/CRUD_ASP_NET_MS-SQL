@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\CRUD_ASP_NET_MS-SQL\CRUD_ASP_NET_MS-SQL\CRUD_ASP_NET_MS-SQL
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/MATHEUS/OneDrive/Área de Trabalho/Projetos/CRUD_ASP_NET_MS-SQL/CRUD_ASP_NET_MS-SQL/CRUD_ASP_NET_MS-SQL/Pages/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MATHEUS/OneDrive/Área de Trabalho/Projetos/CRUD_ASP_NET_MS-SQL/CRUD_ASP_NET_MS-SQL/CRUD_ASP_NET_MS-SQL/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
