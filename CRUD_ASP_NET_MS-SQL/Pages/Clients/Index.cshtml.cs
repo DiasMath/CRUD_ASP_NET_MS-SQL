@@ -44,7 +44,7 @@ public class IndexModel : PageModel
         }
         catch (Exception ex)
         {
-
+            Console.WriteLine("Exception: " + ex.ToString());
         }
 
     }
