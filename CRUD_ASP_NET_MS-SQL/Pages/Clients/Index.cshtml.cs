@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Data.SqlClient;
 
 namespace CRUD_ASP_NET_MS_SQL.Pages.Clients;
 
@@ -10,6 +11,47 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
+        try
+        {
+            String connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=MyBarberShop;Integrated Security=True";
+        
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                String sql = "SELECT * FROM clients";
+                
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            ClientInfo clientInfo = new ClientInfo();
+                            clientInfo.id = "" + reader.GetInt32(0);
+                            clientInfo.name = reader.GetString(1);
+                            clientInfo.email = reader.GetString(2);
+                            clientInfo.phone = reader.GetString(3);
+                            clientInfo.adress = reader.GetString(4);
+                            clientInfo.appointment = reader.GetString(5);
+                            clientInfo.service = reader.GetString(6);
+                        }
+                    }
+                }
+
+            }
+        
+        
+        
+        
+        
+        
+        
+        }
+        catch (Exception ex)
+        {
+
+        }
+
     }
 
     public class ClientInfo
