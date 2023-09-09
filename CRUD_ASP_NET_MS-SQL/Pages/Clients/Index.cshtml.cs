@@ -34,18 +34,13 @@ public class IndexModel : PageModel
                             clientInfo.adress = reader.GetString(4);
                             clientInfo.appointment = reader.GetString(5);
                             clientInfo.service = reader.GetString(6);
+
+                            listClients.Add(clientInfo);
                         }
                     }
                 }
 
             }
-        
-        
-        
-        
-        
-        
-        
         }
         catch (Exception ex)
         {
