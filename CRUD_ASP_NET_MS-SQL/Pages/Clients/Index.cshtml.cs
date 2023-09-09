@@ -31,7 +31,7 @@ public class IndexModel : PageModel
                             clientInfo.name = reader.GetString(1);
                             clientInfo.email = reader.GetString(2);
                             clientInfo.phone = reader.GetString(3);
-                            clientInfo.adress = reader.GetString(4);
+                            clientInfo.address = reader.GetString(4);
                             clientInfo.appointment = reader.GetString(5);
                             clientInfo.service = reader.GetString(6);
 
@@ -55,7 +55,7 @@ public class IndexModel : PageModel
         public String name;
         public String email;
         public String phone;
-        public String adress;
+        public String address;
         public String appointment;
         public String service;
 
